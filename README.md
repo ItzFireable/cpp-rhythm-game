@@ -1,5 +1,5 @@
 Builds:
-[![C/C++ CI](https://github.com/ItzFireable/cpp-rhythm-game/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/tredu/projektityo2022-KimiJok1/actions/workflows/c-cpp.yml)
+[![C/C++ CI](https://github.com/ItzFireable/cpp-rhythm-game/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/ItzFireable/cpp-rhythm-game/actions/workflows/c-cpp.yml)
 
 # Compiling (Windows)
 
