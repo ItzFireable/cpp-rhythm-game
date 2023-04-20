@@ -1,0 +1,4 @@
+BPM=132
+ARTIST=James Landino
+CHARTER=Kimi
+OFFSET=0

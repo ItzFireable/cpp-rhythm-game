@@ -1,0 +1,5 @@
+libraries/*
+export/*.exe
+export/logs/*.*
+export/export.zip
+.vscode/*

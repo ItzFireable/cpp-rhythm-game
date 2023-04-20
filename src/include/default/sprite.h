@@ -1,0 +1,7 @@
+class Sprite
+{
+private:
+
+public:
+
+};

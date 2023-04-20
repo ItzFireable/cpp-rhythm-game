@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <windows.h>
+#include <psapi.h>
+#include <ctime>
+#include <fstream>
+#include <math.h>
+#include <vector>
+#include <iostream>
+#include <ft2build.h>
+#include <stdlib.h>
+#include <chrono>
+#include <iomanip>
+#include <string.h>
+#include <time.h>
+#include <tuple>
+#include <thread>
+#include <winternl.h>
+#include <variant>
+#include <any>
+#include <algorithm>
+
+#include <lua/lua.hpp>
+#include <SDL2/SDL.h>
+#include <SDL2/SDL_image.h>
+#include <SDL2/SDL_mixer.h>
+#include <SDL2/SDL_ttf.h>
+#include <SDL2/SDL_syswm.h>
+#include <SDL_gpu.h>
+
+#include <GL/glew.h>
+#include <SDL2/SDL_opengl.h>
+#include <GLFW/glfw3.h>
+#include <GL/glu.h>

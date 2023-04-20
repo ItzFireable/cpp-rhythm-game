@@ -1,0 +1,49 @@
+varying vec4 color;
+varying vec2 texCoord;
+
+uniform sampler2D tex;
+uniform vec4 colorOverride;
+uniform float time;
+uniform vec2 resolution;
+#define S(a, b, c) smoothstep(a, b, c)
+#define PI acos(-1.)
+#define CEL rem(R)
+#define LOWRES 320.
+#define T time
+#define R resolution.xy
+
+vec4 generateNoise(){
+	float x = texCoord.x;
+	float y = texCoord.y;
+	float noise = sin(x * 100.0 + time) * 0.5 + 0.5;
+	return vec4(vec3(noise), 1.0);
+}
+
+float stepFloat(float a, float step, float stepIn)
+{
+	if(a < step)
+	{
+		return 0
+	} else if(a > step && a < (stepIn + step))
+	{
+		return (a - step) / (stepIn - step);
+	} else
+	{
+		return 1;
+	}
+
+}
+
+void main(void)
+{
+    vec2 uv = texCoord;
+    vec4 c = color;// * colorOverride;
+	// vec4 funky = vec4(color.r/uv.x, color.b/uv.y, color.g / resolution.xy, 1.0);
+	// c = sin(time) * funky;
+	vec4 funky = vec4(abs(sin(time)) * 0.5 + 1, abs(sin(time + 1)) * 0.5 + 1, abs(sin(time+ 2)) * 0.5 + 1, 1.0);
+	c = color * funky;
+	c = vec4(stepFloat(c.r, .25, .25), stepFloat(c.g, .25, .25),stepFloat(c.b, .25, .25), 1.0);
+
+    gl_FragColor = texture2D(tex, uv) * c;
+}
+

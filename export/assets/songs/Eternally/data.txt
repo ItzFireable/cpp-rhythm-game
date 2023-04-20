@@ -1,0 +1,4 @@
+BPM=128
+ARTIST=Camellia
+CHARTER=Kimi
+OFFSET=0
