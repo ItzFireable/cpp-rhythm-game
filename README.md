@@ -16,3 +16,7 @@ cd projektityo2022-KimiJok1
 make
 ```
 
+# Credits
+
+- Code by ItzFireable
+- Important things by Velcrow the almighty the creator of penis shader
