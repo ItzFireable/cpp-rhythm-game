@@ -1,4 +1,3 @@
-Builds:
 [![C/C++ CI](https://github.com/ItzFireable/cpp-rhythm-game/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/ItzFireable/cpp-rhythm-game/actions/workflows/c-cpp.yml)
 
 # Compiling (Windows)
@@ -18,5 +17,5 @@ make
 
 # Credits
 
-- Code by ItzFireable
-- Important things by Velcrow the almighty the creator of penis shader
+- Penis shader by Velcrow
+- Everything else by ItzFireable
